@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.0/examples/cover/ -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Cover Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/cover.css" th:href="@{css/cover.css}" rel="stylesheet">
+</head>
+
+<body class="text-center" data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+
+    <!--
+To Use Header as A fragement insert
+th:fragment attribute
+then call
+th:replace attr
+on the element you want to replace its content with
+eg.
+th:fragment="header"
+th:replace="fileName :: header"
+
+th:replace means copy and replace the calling element totally with the fragment element
+th:insert means to insert inside the selected element with the element, it makes carries the whole fragment and iclude it inside the calling element
+th:include will copy the content of fragment and replace it with its calling element content.
+
+With Include Styles we still have some repeated codes hence it advisable to use Hierarchical layout style
+
+-->
+    <header class="masthead mb-auto" th:insert="fragments/header :: header">
+        <div class="inner">
+            <h3 class="masthead-brand">Header</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="https://getbootstrap.com/docs/4.0/examples/cover/#">Tab 1</a>
+                <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/cover/#">Tab 2</a>
+                <a class="nav-link" href="https://getbootstrap.com/docs/4.0/examples/cover/#">Tab 3</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">Cover your page.</h1>
+        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+        <p class="lead">
+            <a href="https://getbootstrap.com/docs/4.0/examples/cover/#" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
+    </main>
+
+    <footer class="mastfoot mt-auto" th:include="fragments/footer :: footer">
+        <div class="inner">
+            <p>STATIC template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        </div>
+    </footer>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--<script src="../static/js/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>-->
+<!--<script src="../static/js/popper.min.js.download"></script>-->
+<!--<script src="../static/js/bootstrap.min.js.download"></script>-->
+
+
+<div id="pt-ext-root"></div>
+<iframe class="hs-iframe hidden" src="./Cover Template for Bootstrap_files/saved_resource.html"></iframe>
+<div class="hs-iframe-controls hidden"></div>
+<script src="chrome-extension://gppongmhjkpfnbhagpmjfkannfbllamg/js/js.js">
+</script>
+</body>
+<div id="vimeo-record-extension"></div>
+<grammarly-desktop-integration data-grammarly-shadow-root="true">
+
+</grammarly-desktop-integration>
+</html>
