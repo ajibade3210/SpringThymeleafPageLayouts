@@ -16,7 +16,7 @@ public class IndexController {
         return "user";
     }
 
-    @GetMapping("/admin")
+    @GetMapping("/admin/index")
     public String admin() {
         return "admin";
     }
